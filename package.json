@@ -1,0 +1,50 @@
+{
+  "name": "mine",
+  "version": "0.0.1",
+  "description": "Yours...or mIne?",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "prestart": "npm run build",
+    "start": "electron ./dist/main.js",
+    "pretest": "webpack --config webpack.tests.config.js",
+    "test": "jest"
+  },
+  "jest": {
+    "testRegex": "/__tests__/.*\\.jsx?",
+    "testResultsProcessor": "./node_modules/jest-junit"
+  },
+  "jest-junit": {
+    "suiteName": "jest tests",
+    "output": "./TEST-jest_junit.xml",
+    "classNameTemplate": "{classname}-{title}",
+    "titleTemplate": "{classname}-{title}",
+    "usePathForSuiteName": "true"
+  },
+  "author": "Stanny Nuytkens",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^20.0.2",
+    "@types/node": "^6.0.81",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015-node": "^6.1.1",
+    "babel-preset-react": "^6.24.1",
+    "electron": "1.6.11",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "html-webpack-plugin": "^2.29.0",
+    "jest": "^20.0.4",
+    "jest-junit": "^1.5.1",
+    "standard": "^10.0.2",
+    "standard-loader": "^6.0.1",
+    "ts-loader": "^2.2.2",
+    "tslint": "^5.5.0",
+    "tslint-config-standard": "^6.0.1",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.4.1",
+    "webpack": "^3.2.0"
+  }
+}

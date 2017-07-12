@@ -1,0 +1,10 @@
+<testsuites name="jest tests">
+  <testsuite name="\__tests__\gui.tests.js" tests="1" errors="0" failures="0" skipped="0" timestamp="2017-07-12T20:29:05" time="0.705">
+    <testcase classname="GUI-PlaceHolderFailingTest" name="GUI-PlaceHolderFailingTest" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="\__tests__\host.tests.js" tests="1" errors="0" failures="0" skipped="0" timestamp="2017-07-12T20:29:06" time="0.044">
+    <testcase classname="Host-PlaceHolderPassingTest" name="Host-PlaceHolderPassingTest" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
